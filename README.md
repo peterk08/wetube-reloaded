@@ -1,16 +1,31 @@
-/ -> Home
-/join -> Join
-/login -> Login
-/search -> Search
-
-/users/:id -> See User
-/users/logout -> Log Out
-/users/edit -> Edit My Profile
-/users/delete -> Delete My Profile
-
-/videos/:id -> See Video
-/videos/:id/edit -> Edit Video
-/videos/:id/delete -> Delete Video
-/videos/upload -> Upload Video
+배우는 이론
 
 
+Request / Response
+MVC
+Cookies
+Sessions
+Middlewares
+Authentication
+Security
+Routing
+Templates
+Models
+Relationships
+
+
+사용하는 패키지
+
+NodeJS
+ES6
+Express
+Babel
+Pug
+Passport
+AJAX
+Webpack
+SCSS
+MongoDB
+Mongoose
+Multer
+NoSQL
