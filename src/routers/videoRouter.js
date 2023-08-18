@@ -3,6 +3,7 @@ import {watch, getEdit, postEdit, getUpload, postUpload, deleteVideo,} from "../
 import { protectorMiddleware,  } from "../middlewares";
 
 
+
 const videoRouter = express.Router();
 
 videoRouter.route("/:id([0-9a-f]{24})").get(watch);
