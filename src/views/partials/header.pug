@@ -15,11 +15,12 @@ header
                     a(href="/users/logout")  Log Out
                 li
                     a(href=`/users/${loggedInUser._id}`) My Profile
-                    if !loggedInUser.avatarUrl
+                    if loggedInUser.avatarUrl === ""
                         span 😂
                     else
                         img.header__avatar(src="/" + loggedInUser.avatarUrl)
-                        img.header__avatar(src=loggedInUser.avatarUrl,crossorigin)
+                        console.log(loggedInUser.avatarUrl)
+                        //img.header__avatar(src=loggedInUser.avatarUrl,crossorigin)
 
             else
                 li
