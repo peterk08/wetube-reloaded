@@ -17,7 +17,8 @@
   "author": "peterkkhan<juna08@naver.com>",
   "license": "MIT",
   "dependencies": {
-    "@ffmpeg/ffmpeg": "^0.12.6",
+    "@ffmpeg/core": "^0.8.5",
+    "@ffmpeg/ffmpeg": "^0.9.8",
     "@ffmpeg/util": "^0.12.1",
     "bcrypt": "^5.1.0",
     "connect-mongo": "^5.0.0",
