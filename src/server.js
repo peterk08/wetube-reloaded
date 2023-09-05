@@ -2,6 +2,7 @@ import express from "express";
 //import "./db";
 import morgan from"morgan";
 import session from "express-session";
+import flash from "express-flash";
 import MongoStore from "connect-mongo";
 import rootRouter from "./routers/rootRouter";
 import userRouter from "./routers/userRouter";
@@ -21,6 +22,7 @@ app.use((req, res, next) => {
     res.header("Cross-Origin-Opener-Policy", "same-origin");
     next();
   });
+
 
 app.set("view engine", "pug");
 app.set("views", process.cwd() + "/src/views");
@@ -43,7 +45,7 @@ app.use(
         next();
     });
 });*/
-
+app.use(flash());
 app.use(localsMiddleware);
 app.use("/uploads", express.static("uploads"));
 app.use("/static", express.static("assets"));
