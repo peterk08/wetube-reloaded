@@ -5,7 +5,7 @@ header
         ul
             li
                 a(href="/search")
-                    i.fas.fa-search 
+                    i.fas.fa-search
             if loggedIn
                 li
                     a(href="/videos/upload") Upload Video
@@ -14,15 +14,13 @@ header
                 li
                     a(href="/users/logout")  Log Out
                 li
-                    a(href=`/users/${loggedInUser._id}`) My Profile
-                    if loggedInUser.avatarUrl === ""
-                        span 😂
-                    else
-                        img.header__avatar(src="/" + loggedInUser.avatarUrl)
-                        //img.header__avatar(src=loggedInUser.avatarUrl,crossorigin)
-
+                    a(href=`/users/${loggedInUser._id}`)
+                        if loggedInUser.avatarUrl === ""
+                            span 😀
+                        else
+                            img.header__avatar(src="/" + loggedInUser.avatarUrl)
             else
                 li
-                    a(href="/login") Login                        
+                    a(href="/login")  Login                        
                 li
                     a(href="/join").header__btn  Join
